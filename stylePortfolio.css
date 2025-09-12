@@ -517,16 +517,20 @@ li{
 
 .menuLoisirs{
   overflow: auto;
-  padding: 12px;
   justify-content: left;
+
 }
 
+.menuLoisirs a{
+  padding-bottom: 12px;
+  
+}
 
 .imgProfile{
   max-width: 80px;
   top: 0%;
   left: 50%;
-  transform: translate(-30%, -70%);
+  transform: translate(-30%, -80%);
   
 }
 
@@ -553,5 +557,3 @@ li{
   }
 
   
-
-
