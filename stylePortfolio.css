@@ -499,6 +499,10 @@ li{
   "nom"
   "bio";
 }
+.sectionProjet ul{
+  width: 100%;
+  overflow-x: auto;
+}
 
 
 .FormeProfil{
@@ -538,5 +542,6 @@ li{
 
 
   }
+
 
   
