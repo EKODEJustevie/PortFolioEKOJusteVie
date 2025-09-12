@@ -1,0 +1,542 @@
+body{
+  background-color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  position: relative;
+  height: 25vh;
+  overflow: hidden;
+}
+
+header .Coverimg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+  transition: transform 0.2s ease-out;
+
+}
+
+.Gabon{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  left: auto;
+  height: 40px;
+  width: 40px;
+  }
+
+h2{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section{
+  padding: 12px;
+  box-sizing: border-box; 
+}
+
+
+
+.presentaion{
+  position: relative;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(33%,1fr));
+  gap: 1em;
+  grid-template-areas: 
+  " titre . ."
+  "bio . nom"
+  "bio . .";
+}
+
+.FormeProfil{
+  grid-area: profil;
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+
+}
+
+
+.imgProfile{
+  position: absolute;
+  border: none;
+  max-width: 100px;
+  z-index: 4;
+  width: 15vh;
+  height: auto;
+  object-fit: contain;
+  transform-origin: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.presentaion span{
+  font-size: 24px;
+  color: #888;
+  text-transform: uppercase;
+  grid-area: titre;
+}
+
+
+.presentaion .profession {
+  font-size: 44px;
+}
+
+
+
+
+.Biographie{
+  border-radius: 8px;
+  grid-area: bio;
+  margin: 40px 0;
+  padding: 4px 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  border: 1px solid #333; 
+  max-width: 100%;
+  font-family: 'Courier New', monospace;
+  background: #1a1a1a;
+  color: #d0d0d0ff;
+  height: auto;
+  text-align: justify;
+}
+
+
+  .Biographie p{
+    font-size: 14px;
+    line-height: 1.5;
+    border-right: 3px solid #d0d0d0ff;
+    min-height: 8em;
+    }
+
+  .Biographie h2{
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+
+
+.noms{
+  z-index: 10;
+  font-size: 18px;
+  color: #FFF;
+  text-transform: uppercase;
+  grid-area: nom;
+}
+
+
+
+#Etudes{
+  position: relative;
+  height: 90vh;
+  width: 100%;
+
+}
+
+svg, h2{
+  color: #FFF;
+}
+
+.BlockEtudes{
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: grab;
+}
+
+#line1 { stroke: red; }
+#line2 { stroke: blue; }
+#line3 { stroke: green; }
+
+#Block1{
+  left: 5%;
+  top: 20%;
+}
+
+#Block2{
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+#Block3{
+  right: 5%;
+  top: 45%;
+}
+#Block4{
+  left: 5%;
+  top: 45%;
+}
+#Block5{
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+#Block6{
+  left: 40%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+
+}
+
+
+
+
+
+.Expériences{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.boxExpérience{
+  border: none;
+  width: 100%;
+  background-color: #FFF;
+  padding: 12px;
+  border-radius: 8px;
+  color: #333;
+}
+
+
+
+
+
+
+
+.Sectionlangues{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+}
+
+
+
+.langues{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  padding: 0px;
+}
+
+.BoxLangue{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  padding: 12px;
+  margin: 0;
+  border-radius: 8px;
+  border: none;
+  width: 120px;
+  aspect-ratio: 1;
+  background-color: #FFF;
+  font-weight: bold;
+}
+  
+.BoxLangue img{
+  object-fit: contain;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+
+
+.Compétences{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 1em;
+  padding: 12px;
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+
+
+.menuComptétences{
+  width: 100%;
+  max-width: 500px;
+  align-self: center;
+  height: auto;
+  height: auto;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.menuProjet ul, .menuComptétences ul{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  list-style-type: none;
+}
+
+.menuProjet button, .menuComptétences button{
+  width: 64px;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+
+}
+
+button svg{
+  color: #fff;
+}
+
+.ctnCompétences{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 16px;
+  justify-content: space-around;
+  margin: 0;
+  gap: 1em;
+  overflow-x: auto;
+}
+
+
+
+
+.Boite{
+  
+  padding: 0px;
+  border-radius: 8px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  height: 100%;
+  aspect-ratio: 16/9 !important;
+}
+
+.StructureCtn{
+  position: relative;
+  height: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 8px;
+
+}
+
+.imgBox{
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.Boite h2, .Boite ul{
+  position: absolute;
+  color: #333;
+  z-index: 2;
+}
+.Boite h2{
+  top: 12px;
+  left: 12px;
+  
+}
+
+.colorWhite h2, .colorWhite ul{
+  color: #FFF;
+}
+
+.Boite ul{
+
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 4%;
+  list-style-type: none;
+}
+
+
+li{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+
+.CtnrNone{
+  display: none;
+}
+
+.BtnOrange{
+  background-color: #888 !important;
+}
+
+
+.kali{
+  height: 28px;
+  width: 28px;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.kali svg{
+  color: #FFF;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+.sectionProjets{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.menuProjet{
+  width: 100%;
+  align-self: center;
+  height: auto;
+  height: auto;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.menuProjet button{
+  width: 80px;
+  font-size: 12px;
+  background-color: #f55b02;
+}
+
+
+
+.socialNetwork{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.socialNetwork a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 68px;
+  aspect-ratio: 1;
+  padding: 12px;
+  border-radius: 50%;
+}
+.socialNetwork a svg{
+  width: 100% !important;
+  aspect-ratio: 1;
+}
+.loisirLIst{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.loisirLIst li span{
+  color: #FFF;
+}
+
+@media screen and (max-width: 768px){
+.presentaion{
+  height: auto;
+  padding-top: 144px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  " titre"
+  "nom"
+  "bio";
+}
+
+
+.FormeProfil{
+  position: absolute;
+  width: 60%;
+  top: 144px;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+
+.imgProfile{
+  top: 0%;
+  left: 50%;
+  transform: translate(-30%, -80%);
+  
+}
+
+
+.profession {
+  font-size: 36px;
+  text-align: center;
+}
+
+
+
+.Biographie p{
+  min-height: 6em;
+}
+
+
+.noms{
+  width: 100%;
+  height:24px;
+  text-align: center;
+}
+
+
+  }
+
+  
