@@ -499,10 +499,7 @@ li{
   "nom"
   "bio";
 }
-.sectionProjet ul{
-  width: 100%;
-  overflow-x: auto;
-}
+
 
 
 .FormeProfil{
@@ -515,12 +512,17 @@ li{
 
 
 .imgProfile{
+  max-width: 50px;
   top: 0%;
   left: 50%;
   transform: translate(-30%, -80%);
   
 }
 
+.sectionProjet ul{
+  width: 100%;
+  overflow-x: scrol;
+}
 
 .profession {
   font-size: 36px;
@@ -545,3 +547,4 @@ li{
 
 
   
+
