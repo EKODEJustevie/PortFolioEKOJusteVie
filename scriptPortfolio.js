@@ -33,10 +33,10 @@ setInterval(CoverBackground, 60000);
             type();
         }
 
-        setTimeout(() => {
-            const element = document.getElementById('typewriter-text');
-            typeWriter(element, Bio, 100);
-        }, 5000);
+setTimeout(() => {
+    const element = document.getElementById('typewriter-text');
+    typeWriter(element, Bio, 100);
+}, 1000);
 
 
 
@@ -177,3 +177,11 @@ function changeCompétence(l){
 }
 
 
+const alertProjet = document.querySelectorAll('.BtnProjet');
+
+alertProjet.forEach(item =>{
+    item.addEventListener('click',() =>{
+        alert('Les projets ne peuvent être accéssible que sur démande par mail');
+    
+    });
+})
