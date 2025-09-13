@@ -434,7 +434,7 @@ li{
   gap: 1em;
 }
 
-.menuProjet{
+.menuProjet, .menuLoisir{
   width: 100%;
   align-self: center;
   height: auto;
@@ -447,13 +447,46 @@ li{
 
 }
 
-
-
 .menuProjet button{
   width: 80px;
   font-size: 12px;
   background-color: #f55b02;
 }
+
+
+
+.menuLoisirs{
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  overflow-x: auto;
+}
+
+.menuLoisirs a{
+  width: 80px;
+  font-size: 12px;
+  padding: 12px;
+  margin: 12px;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a02f5;
+  color: #FFF;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.loisirLIst{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.loisirLIst li span{
+  color: #FFF;
+}
+
+
+
 
 
 
@@ -478,15 +511,7 @@ li{
   width: 100% !important;
   aspect-ratio: 1;
 }
-.loisirLIst{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1em;
-}
-.loisirLIst li span{
-  color: #FFF;
-}
+
 
 @media screen and (max-width: 768px){
 .presentaion{
@@ -515,16 +540,6 @@ li{
 
 }
 
-.menuLoisirs{
-  overflow: auto;
-  justify-content: left;
-
-}
-
-.menuLoisirs a{
-  padding-bottom: 12px;
-  
-}
 
 .imgProfile{
   max-width: 80px;
