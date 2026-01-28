@@ -4,7 +4,7 @@ let CoverBackgroundimg = ["aircraftmaintenance.png","chess.png","CODEVENOM Fulls
     ,"5 Graphics Settings Worth Tweaking in Every PC Game.jpeg", "HD Desktop Wallpapers _ Laptop Wallpapers.jpeg", "r.jpeg", "Física.jpeg", "télécharger (2).jpeg", "télécharger (3).jpeg", "télécharger (4).jpeg", "télécharger (5).jpeg", 
     "télécharger (6).jpeg", "télécharger (7).jpeg", "The Simplest Formula.jpeg", "Visual Studio Code Wallpapers - Wallpaper Cave.jpeg", "哈哈哈.jpeg"
 ];  
-const MyAge = 19;
+const MyAge = 20;
 const Bio ="Hello! moi c'est Juste-Vie, j'ai "+ MyAge + " ans Je suis étudiant en école d'ingénieurie à Mundiapolis. J'aime la Technologies, d'exploration spatiale, le sport et la nature.Je vous invite à en découvrir plus avec mon site, 🙂 enjoy !";
 
 function CoverBackground(){
@@ -185,3 +185,4 @@ alertProjet.forEach(item =>{
     
     });
 })
+
