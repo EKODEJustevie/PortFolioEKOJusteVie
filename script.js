@@ -1,6 +1,6 @@
 // ===== Variables globales =====
-const MyAge = 19;
-const Bio = `Hello! Moi c'est Juste-Vie, j'ai ${MyAge} ans. Je suis étudiant en école d'ingénierie à Mundiapolis. Passionné par les technologies, l'exploration spatiale, le sport et la nature. Je me spécialise en aéronautique avec un fort intérêt pour la programmation et la cybersécurité.`;
+const MyAge = 20;
+const Bio = `Hello! Moi c'est Juste-Vie, j'ai ${MyAge} ans. Je suis étudiant en école d'ingénierie à Mundiapolis. Passionné par les technologies, l'exploration spatiale et de sport. Je me spécialise en génie des systèmes aéronautique avec un fort intérêt pour la programmation, la robotique et la cybersécurité dont je me passionne depuis mes 13 ans.`;
 
 // ===== Effet de défilement pour la navigation =====
 window.addEventListener('scroll', () => {
