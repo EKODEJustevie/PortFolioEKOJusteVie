@@ -1,580 +1,506 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juste-Vie MILAGUEH - Ingénieur Aéronautique</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juste-Vie MILAGUEH BISSILA EKO — Ingénieur Aéronautique</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation fixe -->
-    <nav class="main-nav">
-        <div class="nav-container">
-            <div class="logo">Juste-Vie EKO</div>
-            <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#education">Formation</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-toggle">☰</button>
+
+<!-- Grille décorative de fond (filigrane) -->
+<div class="bg-grid" aria-hidden="true"></div>
+
+<!-- NAVIGATION -->
+<nav class="main-nav">
+  <div class="nav-grid-pattern" aria-hidden="true"></div>
+  <div class="nav-container">
+    <div class="logo">
+      <span class="logo-main">E_KODE</span><span class="logo-tag">JUSTE-VIE</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">Profil</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#education">Formation</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#competitions">Compétitions</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero-section">
+  <div class="hero-content">
+    <div class="hero-eyebrow">DOSSIER_INGÉNIEUR // AÉRONAUTIQUE_&amp;_SYSTÈMES_EMBARQUÉS</div>
+    <div class="profile-container">
+      <div class="profile-image-wrapper">
+        <div class="profile-initials">JV</div>
+        <div class="profile-ring"></div>
+      </div>
+      <svg class="nationality-badge" title="Gabon" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 36 36">
+        <path fill="#3d9a4f" d="M32 5H4a4 4 0 0 0-4 4v5h36V9a4 4 0 0 0-4-4z"/>
+        <path fill="#3d72f2" d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-5H0v5z"/>
+        <path fill="#d6a94e" d="M0 14h36v8H0z"/>
+      </svg>
+    </div>
+    <h1 class="hero-title">
+      <span class="name-highlight">MILAGUEH BISSILA EKO</span>
+      <span class="subtitle">Depaco Reverant Juste-Vie</span>
+    </h1>
+    <h2 class="profession">
+      <span class="typing-text">Ingénieur Aéronautique</span><span class="cursor">_</span>
+    </h2>
+    <div class="hero-tags">
+      <span class="tag">Systèmes Embarqués</span>
+      <span class="tag">Aéronautique</span>
+      <span class="tag">IoT</span>
+      <span class="tag">Cybersécurité</span>
+      <span class="tag">Automatismes</span>
+    </div>
+    <div class="cta-buttons">
+      <a href="#contact" class="btn btn-primary">Me Contacter</a>
+      <a href="#projects" class="btn btn-secondary">Voir Mes Projets</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>SCROLL</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <h2 class="section-title"><span class="title-tag">PROFIL</span>À Propos</h2>
+    <div class="about-content">
+      <div class="about-text panel">
+        <p class="typewriter-bio" id="typewriter-text"></p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-label">ÂGE</span>
+            <span class="stat-number">20</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">TECHNOLOGIES</span>
+            <span class="stat-number">8+</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">PROJETS</span>
+            <span class="stat-number">10+</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">LANGUES</span>
+            <span class="stat-number">5</span>
+          </div>
         </div>
-    </nav>
-
-    <!-- Section Hero -->
-    <section id="home" class="hero-section">
-        <div class="hero-background">
-            <canvas id="particles-canvas"></canvas>
+      </div>
+      <div class="about-visual">
+        <div class="interests-grid">
+          <div class="interest-card panel">
+            <div class="interest-icon">🚀</div>
+            <h3>Aéronautique</h3>
+            <p>Aviation, systèmes embarqués et exploration spatiale.</p>
+          </div>
+          <div class="interest-card panel">
+            <div class="interest-icon">⚙️</div>
+            <h3>Automatismes</h3>
+            <p>Programmation industrielle, Ladder et GRAFCET.</p>
+          </div>
+          <div class="interest-card panel">
+            <div class="interest-icon">🔒</div>
+            <h3>Cybersécurité</h3>
+            <p>Sécurité informatique et protection des données.</p>
+          </div>
+          <div class="interest-card panel">
+            <div class="interest-icon">🌿</div>
+            <h3>Nature &amp; Sport</h3>
+            <p>Randonnée, marathon, échecs et football.</p>
+          </div>
         </div>
-        <div class="hero-content">
-            <div class="profile-container">
-                <div class="profile-image-wrapper">
-                    <img src="images/P.png" alt="Juste-Vie MILAGUEH" class="profile-img">
-                    <div class="profile-ring"></div>
-                </div>
-                <svg class="nationality-badge" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 36 36">
-                    <path fill="#008B29" d="M32 5H4a4 4 0 0 0-4 4v5h36V9a4 4 0 0 0-4-4z"/>
-                    <path fill="#0000FF" d="M0 27a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4v-5H0v5z"/>
-                    <path fill="#FCD116" d="M0 14h36v8H0z"/>
-                </svg>
-            </div>
-            <h1 class="hero-title">
-                <span class="name-highlight">MILAGUEH BISSILA EKO</span>
-                <span class="subtitle">Depaco Reverant Juste-Vie</span>
-            </h1>
-            <h2 class="profession">
-                <span class="typing-text">Ingénieur Aéronautique</span>
-                <span class="cursor">|</span>
-            </h2>
-            <div class="hero-tags">
-                <span class="tag">Technologie</span>
-                <span class="tag">Aéronautique</span>
-                <span class="tag">Cybersécurité</span>
-                <span class="tag">Innovation</span>
-            </div>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Me Contacter</a>
-                <a href="#projects" class="btn btn-secondary">Mes Projets</a>
-            </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <h2 class="section-title"><span class="title-tag">SKILLSET</span>Compétences Techniques</h2>
+
+    <div class="skills-nav">
+      <button class="skill-tab active" data-category="programming">Programmation</button>
+      <button class="skill-tab" data-category="embedded">Systèmes Embarqués &amp; IoT</button>
+      <button class="skill-tab" data-category="automation">Automatismes</button>
+      <button class="skill-tab" data-category="software">Logiciels</button>
+      <button class="skill-tab" data-category="cybersecurity">Cybersécurité</button>
+    </div>
+
+    <div class="skills-content">
+
+      <!-- Programmation -->
+      <div class="skill-category active" id="programming">
+        <div class="skills-grid">
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Python</h3><span class="skill-value">85%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>JavaScript</h3><span class="skill-value">80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>C / C++</h3><span class="skill-value">75%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>PHP</h3><span class="skill-value">50%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 50%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>React</h3><span class="skill-value">75%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Node.js</h3><span class="skill-value">50%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 50%"></div></div>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-arrow"></div>
+      </div>
+
+      <!-- Systèmes Embarqués & IoT -->
+      <div class="skill-category" id="embedded">
+        <p class="category-note">Familles de microcontrôleurs pratiquées pour le développement de solutions IoT et systèmes embarqués :</p>
+        <div class="skills-grid">
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>NXP S32K144</h3><span class="skill-value">80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            <p class="skill-desc">MCU automobile — développement sous S32 Design Studio</p>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>S32 Design Studio</h3><span class="skill-value">75%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            <p class="skill-desc">IDE NXP pour la famille S32K</p>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Microchip PIC</h3><span class="skill-value">70%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+            <p class="skill-desc">Programmation bas niveau, registres et périphériques</p>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>ESP32</h3><span class="skill-value">80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            <p class="skill-desc">Connectivité Wi-Fi/BLE pour projets IoT</p>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Arduino</h3><span class="skill-value">95%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Raspberry Pi</h3><span class="skill-value">80%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            <p class="skill-desc">Plateforme centrale du projet Assistant Modulaire IA</p>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Section À propos -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">01.</span>
-                À Propos
-            </h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="typewriter-bio" id="typewriter-text"></p>
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <span class="stat-number">20</span>
-                            <span class="stat-label">Ans</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Technologies</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Projets</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="interests-grid">
-                        <div class="interest-card">
-                            <div class="interest-icon">🚀</div>
-                            <h3>Aéronautique</h3>
-                            <p>Passionné par l'aviation et l'exploration spatiale</p>
-                        </div>
-                        <div class="interest-card">
-                            <div class="interest-icon">💻</div>
-                            <h3>Technologies</h3>
-                            <p>Développement et innovation technologique</p>
-                        </div>
-                        <div class="interest-card">
-                            <div class="interest-icon">🔒</div>
-                            <h3>Cybersécurité</h3>
-                            <p>Sécurité informatique et protection des données</p>
-                        </div>
-                        <div class="interest-card">
-                            <div class="interest-icon">🌿</div>
-                            <h3>Nature & Sport</h3>
-                            <p>Randonnée, marathon et exploration</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <!-- Automatismes -->
+      <div class="skill-category" id="automation">
+        <p class="category-note">Langages de programmation industrielle pour automates et logique de commande :</p>
+        <div class="skills-grid">
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Ladder (LD)</h3><span class="skill-value">70%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+            <p class="skill-desc">Langage à contacts pour la logique automate</p>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>GRAFCET</h3><span class="skill-value">70%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+            <p class="skill-desc">Modélisation d'automatismes séquentiels</p>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Section Compétences -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">02.</span>
-                Compétences Techniques
-            </h2>
-            
-            <div class="skills-nav">
-                <button class="skill-tab active" data-category="programming">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="16 18 22 12 16 6"></polyline>
-                        <polyline points="8 6 2 12 8 18"></polyline>
-                    </svg>
-                    Programmation
-                </button>
-                <button class="skill-tab" data-category="electronics">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-                        <rect x="9" y="9" width="6" height="6"></rect>
-                        <line x1="9" y1="1" x2="9" y2="4"></line>
-                        <line x1="15" y1="1" x2="15" y2="4"></line>
-                        <line x1="9" y1="20" x2="9" y2="23"></line>
-                        <line x1="15" y1="20" x2="15" y2="23"></line>
-                        <line x1="20" y1="9" x2="23" y2="9"></line>
-                        <line x1="20" y1="14" x2="23" y2="14"></line>
-                        <line x1="1" y1="9" x2="4" y2="9"></line>
-                        <line x1="1" y1="14" x2="4" y2="14"></line>
-                    </svg>
-                    Électronique
-                </button>
-                <button class="skill-tab" data-category="software">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                        <line x1="9" y1="9" x2="15" y2="9"></line>
-                        <line x1="9" y1="15" x2="15" y2="15"></line>
-                    </svg>
-                    Logiciels
-                </button>
-                <button class="skill-tab" data-category="cybersecurity">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    </svg>
-                    Cybersécurité
-                </button>
-            </div>
-
-            <div class="skills-content">
-                <!-- Programmation -->
-                <div class="skill-category active" id="programming">
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                            <h3>Python</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                            <h3>JavaScript</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
-                            <h3>C/C++</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <img src="https://images.icon-icons.com/2415/PNG/512/php_plain_logo_icon_146397.png" alt="php">
-                            <h3>PHP</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                            <h3>React</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
-                            <h3>Node.js</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Électronique -->
-                <div class="skill-category" id="electronics">
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino">
-                            <h3>Arduino</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" alt="Raspberry Pi">
-                            <h3>Raspberry Pi</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 40%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">⚡</div>
-                            <h3>Circuits Électroniques</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">🔌</div>
-                            <h3>IoT</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Logiciels -->
-                <div class="skill-category" id="software">
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code">
-                            <h3>VS Code</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                            <h3>Git</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
-                            <h3>Linux</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 30%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">🎨</div>
-                            <h3>CAO/FAO</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 65%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cybersécurité -->
-                <div class="skill-category" id="cybersecurity">
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="kali-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm7.5 12c0 4.142-3.358 7.5-7.5 7.5S4.5 16.142 4.5 12 7.858 4.5 12 4.5s7.5 3.358 7.5 7.5z"/>
-                                </svg>
-                            </div>
-                            <h3>Kali Linux</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 20%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">🔐</div>
-                            <h3>Pen Testing</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 15%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">🛡️</div>
-                            <h3>Cryptographie</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 0%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-icon">🔍</div>
-                            <h3>Analyse Forensique</h3>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 5%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Langues -->
-            <div class="languages-section">
-                <h3 class="subsection-title">Langues</h3>
-                <div class="languages-grid">
-                    <div class="language-card">
-                        <span class="flag">🇫🇷</span>
-                        <h4>Français</h4>
-                        <p>Natif</p>
-                    </div>
-                    <div class="language-card">
-                        <span class="flag">🇬🇧</span>
-                        <h4>Anglais</h4>
-                        <p>C1</p>
-                    </div>
-                    <div class="language-card">
-                        <span class="flag">🇪🇸</span>
-                        <h4>Espagnol</h4>
-                        <p>A1</p>
-                    </div>
-                    <div class="language-card">
-                        <span class="flag">Ar</span>
-                        <h4>Darija</h4>
-                        <p>A1</p>
-                    </div>
-                    <div class="language-card">
-                        <span class="flag">Ch</span>
-                        <h4>Chinois</h4>
-                        <p>A1</p>
-                    </div>
-                </div>
-            </div>
+      <!-- Logiciels -->
+      <div class="skill-category" id="software">
+        <div class="skills-grid">
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>VS Code</h3><span class="skill-value">90%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Git</h3><span class="skill-value">50%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 50%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Linux</h3><span class="skill-value">30%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 30%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>CAO / FAO</h3><span class="skill-value">65%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Section Formation -->
-    <section id="education" class="education-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">03.</span>
-                Parcours Académique
-            </h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Actuellement</span>
-                        <h3>École d'Ingénierie - Mundiapolis</h3>
-                        <p>Formation en ingénierie aéronautique avec spécialisation en systèmes embarqués et cybersécurité</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Année Précédente</span>
-                        <h3>Classe Préparatoire</h3>
-                        <p>Mathématiques, Physique et Sciences de l'Ingénieur</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2023</span>
-                        <h3>Baccalauréat Technologique</h3>
-                        <p>Mention 2ème et orientation sciences de l'ingénieur</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">Formation Continue</span>
-                        <h3>Autoformation en Programmation</h3>
-                        <p>Développement web, algorithmique et cybersécurité</p>
-                    </div>
-                </div>
-            </div>
+      <!-- Cybersécurité -->
+      <div class="skill-category" id="cybersecurity">
+        <div class="skills-grid">
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Kali Linux</h3><span class="skill-value">20%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 20%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Pen Testing</h3><span class="skill-value">15%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 15%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Cryptographie</h3><span class="skill-value">0%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 0%"></div></div>
+          </div>
+          <div class="skill-card panel">
+            <div class="skill-head"><h3>Analyse Forensique</h3><span class="skill-value">5%</span></div>
+            <div class="skill-bar"><div class="skill-progress" style="width: 5%"></div></div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Section Projets -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">04.</span>
-                Projets & Réalisations
-            </h2>
-            <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all">Tous</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="embedded">Embarqué</button>
-                <button class="filter-btn" data-filter="security">Sécurité</button>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <button class="project-btn">Détails sur demande</button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Application Web Fullstack</h3>
-                        <p>Développement d'une application complète avec React et Node.js</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="embedded">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <button class="project-btn">Détails sur demande</button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Système Embarqué Arduino</h3>
-                        <p>Création d'un système d'assistant de developpement avancé</p>
-                        <div class="project-tags">
-                            <span>Arduino</span>
-                            <span>C++</span>
-                            <span>IoT</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="security">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <button class="project-btn">Détails sur demande</button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Outil de Cybersécurité</h3>
-                        <p>Développement d'outils d'analyse et de test de sécurité réseau</p>
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Kali Linux</span>
-                            <span>Network Security</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <button class="project-btn">Détails sur demande</button>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Dashboard Analytique</h3>
-                        <p>Interface de visualisation de données en temps réel</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>D3.js</span>
-                            <span>API</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="projects-note">💡 Les détails des projets sont disponibles sur demande par email pour des raisons de confidentialité</p>
+    </div>
+
+    <!-- Langues -->
+    <div class="languages-section">
+      <h3 class="subsection-title">LANGUES</h3>
+      <div class="languages-grid">
+        <div class="language-card panel"><span class="flag">🇫🇷</span><h4>Français</h4><p>Natif</p></div>
+        <div class="language-card panel"><span class="flag">🇬🇧</span><h4>Anglais</h4><p>C1</p></div>
+        <div class="language-card panel"><span class="flag">🇪🇸</span><h4>Espagnol</h4><p>A1</p></div>
+        <div class="language-card panel"><span class="flag-text">AR</span><h4>Darija</h4><p>A1</p></div>
+        <div class="language-card panel"><span class="flag-text">中</span><h4>Chinois</h4><p>A1</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATION -->
+<section id="education" class="section education-section">
+  <div class="container">
+    <h2 class="section-title"><span class="title-tag">PARCOURS</span>Formation Académique</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content panel">
+          <span class="timeline-date">EN_COURS</span>
+          <h3>École d'Ingénieur — Université Mundiapolis</h3>
+          <p>1ère année Cycle Ingénieur GSA — spécialisation systèmes embarqués et cybersécurité.</p>
         </div>
-    </section>
-
-    <!-- Section Loisirs -->
-    <section id="hobbies" class="hobbies-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">05.</span>
-                Centres d'Intérêt
-            </h2>
-            <div class="hobbies-grid">
-                <a href="https://fr.wikipedia.org/wiki/A%C3%A9ronautique" class="hobby-card" target="_blank">
-                    <div class="hobby-icon">✈️</div>
-                    <h3>Aéronautique</h3>
-                    <p>Aviation et exploration spatiale</p>
-                </a>
-                <a href="https://fr.wikipedia.org/wiki/%C3%89checs" class="hobby-card" target="_blank">
-                    <div class="hobby-icon">♟️</div>
-                    <h3>Échecs</h3>
-                    <p>Stratégie et réflexion</p>
-                </a>
-                <a href="https://fr.wikipedia.org/wiki/Voyage" class="hobby-card" target="_blank">
-                    <div class="hobby-icon">🗺️</div>
-                    <h3>Voyages</h3>
-                    <p>Découverte de nouvelles cultures</p>
-                </a>
-                <a href="https://fr.wikipedia.org/wiki/Dames" class="hobby-card" target="_blank">
-                    <div class="hobby-icon">🎯</div>
-                    <h3>Dames</h3>
-                    <p>Jeux de stratégie</p>
-                </a>
-                <a href="https://fr.wikipedia.org/wiki/Marathon_(sport)" class="hobby-card" target="_blank">
-                    <div class="hobby-icon">🏃</div>
-                    <h3>Marathon</h3>
-                    <p>Course et endurance</p>
-                </a>
-                <a href="https://fr.wikipedia.org/wiki/Randonn%C3%A9e_p%C3%A9destre" class="hobby-card" target="_blank">
-                    <div class="hobby-icon">🥾</div>
-                    <h3>Randonnée</h3>
-                    <p>Nature et exploration</p>
-                </a>
-            </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content panel">
+          <span class="timeline-date">ANNÉE_PRÉCÉDENTE</span>
+          <h3>Classe Préparatoire</h3>
+          <p>Mathématiques, Physique et Sciences de l'Ingénieur.</p>
         </div>
-    </section>
-
-    <!-- Section Contact -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="title-number">06.</span>
-                Contact
-            </h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Restons en Contact</h3>
-                    <p>Je suis toujours ouvert aux opportunités professionnelles, collaborations sur des projets innovants, ou simplement pour échanger sur la technologie et l'aéronautique.</p>
-                    <div class="social-links">
-                        <a href="https://github.com/EKODEJustevie" target="_blank" class="social-link github">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://wa.me/212079642712" target="_blank" class="social-link whatsapp">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
-                            </svg>
-                            <span>WhatsApp</span>
-                        </a>
-                        <a href="https://t.me/EKODE_J" target="_blank" class="social-link telegram">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-                            </svg>
-                            <span>Telegram</span>
-                        </a>
-                        <a href="mailto:justevie@gmail.com" class="social-link email">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <span>Email</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content panel">
+          <span class="timeline-date">2023</span>
+          <h3>Baccalauréat Technologique</h3>
+          <p>Mention Bien, orientation Sciences de l'Ingénieur.</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <p>&copy; 2026 Juste-Vie MILAGUEH BISSILA EKO. Conçu avec passion.</p>
-            <p class="footer-tagline">Ingénieur Aéronautique • Développeur • Innovateur</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content panel">
+          <span class="timeline-date">CONTINU</span>
+          <h3>Autoformation en Programmation</h3>
+          <p>Développement web, algorithmique, systèmes embarqués et cybersécurité.</p>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- PROJETS -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <h2 class="section-title"><span class="title-tag">RÉALISATIONS</span>Projets</h2>
+
+    <div class="projects-filter">
+      <button class="filter-btn active" data-filter="all">Tous</button>
+      <button class="filter-btn" data-filter="embedded">Embarqué</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="security">Sécurité</button>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Projet phare -->
+      <div class="project-card panel featured" data-category="embedded">
+        <div class="project-badge">PROJET_PHARE</div>
+        <div class="project-info">
+          <h3>Assistant Modulaire IA</h3>
+          <p class="project-context">Projet de mathématiques appliquées — Université Mundiapolis, 1ère année CI GSA, juin 2025</p>
+          <p>Assistant modulaire piloté à distance, conçu autour d'une Raspberry Pi, capable de traiter des commandes en temps réel via plusieurs canaux d'interaction : commande vocale, transcription texte-vers-voix et traitement d'image par caméra. L'objectif était d'allier recherche mathématique appliquée et intelligence artificielle modulaire pour des tâches aussi bien répétitives que récréatives.</p>
+          <ul class="project-features">
+            <li>Reconnaissance et commande vocale</li>
+            <li>Synthèse vocale (texte → voix)</li>
+            <li>Traitement d'image par caméra</li>
+            <li>Architecture modulaire, traitement des ordres en temps réel</li>
+          </ul>
+          <div class="project-tags">
+            <span>Raspberry Pi</span>
+            <span>Python</span>
+            <span>Vision par ordinateur</span>
+            <span>IA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card panel" data-category="embedded">
+        <div class="project-info">
+          <h3>Système Embarqué Arduino</h3>
+          <p>Système d'assistant de développement avancé basé sur microcontrôleur.</p>
+          <div class="project-tags"><span>Arduino</span><span>C++</span><span>IoT</span></div>
+        </div>
+      </div>
+
+      <div class="project-card panel" data-category="security">
+        <div class="project-info">
+          <h3>Outil de Cybersécurité</h3>
+          <p>Outils d'analyse et de test de sécurité réseau.</p>
+          <div class="project-tags"><span>Python</span><span>Kali Linux</span><span>Network Security</span></div>
+        </div>
+      </div>
+
+      <div class="project-card panel" data-category="web">
+        <div class="project-info">
+          <h3>Application Web Fullstack</h3>
+          <p>Application complète développée avec React et Node.js.</p>
+          <div class="project-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+        </div>
+      </div>
+
+      <div class="project-card panel" data-category="web">
+        <div class="project-info">
+          <h3>Dashboard Analytique</h3>
+          <p>Interface de visualisation de données en temps réel.</p>
+          <div class="project-tags"><span>JavaScript</span><span>D3.js</span><span>API</span></div>
+        </div>
+      </div>
+
+    </div>
+    <p class="projects-note">// Détails complémentaires disponibles sur demande par email, pour raisons de confidentialité.</p>
+  </div>
+</section>
+
+<!-- COMPÉTITIONS -->
+<section id="competitions" class="section competitions-section">
+  <div class="container">
+    <h2 class="section-title"><span class="title-tag">HORS_LABO</span>Compétitions &amp; Performances</h2>
+
+    <div class="competitions-grid">
+
+      <div class="competition-panel panel">
+        <div class="competition-head">
+          <h3>♟️ Échecs</h3>
+          <a href="https://www.chess.com/member/ekode_1" target="_blank" rel="noopener" class="chip chip-link">chess.com/ekode_1 ↗</a>
+        </div>
+        <ul class="achievement-list">
+          <li><span class="badge badge-blue">DEMI-FINALISTE</span> Olympiade universitaire du Maroc</li>
+          <li><span class="badge badge-blue">FINALISTE</span> Championnat d'échecs de l'université</li>
+        </ul>
+        <p class="competition-note">Profil et statistiques de parties à jour sur Chess.com.</p>
+      </div>
+
+      <div class="competition-panel panel">
+        <div class="competition-head">
+          <h3>⚽ Football</h3>
+        </div>
+        <ul class="achievement-list">
+          <li><span class="badge badge-gold">FINALISTE</span> Championnat de l'université</li>
+          <li><span class="badge badge-gold">2ᵉ MEILLEUR BUTEUR</span> du championnat</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LOISIRS -->
+<section id="hobbies" class="section hobbies-section">
+  <div class="container">
+    <h2 class="section-title"><span class="title-tag">HORS_MISSION</span>Centres d'Intérêt</h2>
+    <div class="hobbies-grid">
+      <a href="https://fr.wikipedia.org/wiki/A%C3%A9ronautique" class="hobby-card panel" target="_blank" rel="noopener">
+        <div class="hobby-icon">✈️</div><h3>Aéronautique</h3><p>Aviation et exploration spatiale</p>
+      </a>
+      <a href="https://www.chess.com/member/ekode_1" class="hobby-card panel" target="_blank" rel="noopener">
+        <div class="hobby-icon">♟️</div><h3>Échecs</h3><p>Stratégie et réflexion</p>
+      </a>
+      <a href="https://fr.wikipedia.org/wiki/Voyage" class="hobby-card panel" target="_blank" rel="noopener">
+        <div class="hobby-icon">🗺️</div><h3>Voyages</h3><p>Découverte de nouvelles cultures</p>
+      </a>
+      <a href="https://fr.wikipedia.org/wiki/Football" class="hobby-card panel" target="_blank" rel="noopener">
+        <div class="hobby-icon">⚽</div><h3>Football</h3><p>Compétition universitaire</p>
+      </a>
+      <a href="https://fr.wikipedia.org/wiki/Marathon_(sport)" class="hobby-card panel" target="_blank" rel="noopener">
+        <div class="hobby-icon">🏃</div><h3>Marathon</h3><p>Course et endurance</p>
+      </a>
+      <a href="https://fr.wikipedia.org/wiki/Randonn%C3%A9e_p%C3%A9destre" class="hobby-card panel" target="_blank" rel="noopener">
+        <div class="hobby-icon">🥾</div><h3>Randonnée</h3><p>Nature et exploration</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <h2 class="section-title"><span class="title-tag">CONNEXION</span>Contact</h2>
+    <div class="contact-content panel">
+      <h3>Restons en Contact</h3>
+      <p>Je suis toujours ouvert aux opportunités professionnelles, collaborations sur des projets innovants, ou simplement pour échanger sur la technologie et l'aéronautique.</p>
+      <div class="social-links">
+        <a href="https://github.com/EKODEJustevie" target="_blank" rel="noopener" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/juste-vie-eko-a9850639b" target="_blank" rel="noopener" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://www.chess.com/member/ekode_1" target="_blank" rel="noopener" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 6v5c0 5.25 3.4 9.74 8 11 4.6-1.26 8-5.75 8-11V6l-8-4zm0 2.24 6 3v3.76c0 4.14-2.6 7.86-6 8.94-3.4-1.08-6-4.8-6-8.94V7.24l6-3z"/></svg>
+          <span>Chess.com</span>
+        </a>
+        <a href="https://wa.me/212079642712" target="_blank" rel="noopener" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <a href="https://t.me/EKODE_J" target="_blank" rel="noopener" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          <span>Telegram</span>
+        </a>
+        <a href="mailto:justevie@gmail.com" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="main-footer">
+  <div class="container">
+    <p>&copy; 2026 Juste-Vie MILAGUEH BISSILA EKO. Conçu avec passion.</p>
+    <p class="footer-tagline">INGÉNIEUR_AÉRONAUTIQUE // SYSTÈMES_EMBARQUÉS // IOT</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
